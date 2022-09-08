@@ -1,0 +1,39 @@
+.navbar{
+    background-color: rgba(0, 0, 0,.2);
+    color: white;
+    border-bottom: .1px solid white;
+  
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 20px 0px;
+   align-items: center;
+}
+
+.left-nav h2 span{
+    color: rgb(0, 247, 255);
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    
+}
+
+.right-nav button{
+    font-size: 24px;
+    font-weight: 700;
+    color:rgb(56, 56, 56);
+    padding: 5px 14px;
+    border-radius: 18px;
+    background-color: rgb(0, 247, 255);
+}
+.right-nav button:hover{
+    background-color: rgba(0, 247, 255, 0.671);
+    color:white;
+}
