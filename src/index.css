@@ -8,10 +8,21 @@ body {
   background-image:url("./assets/bg4.jpg") ;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: -22rem ;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width : 767px) {
+  body{
+    
+    background-size: 220%;
+    background-attachment: fixed;
+    
+  }
+  
 }

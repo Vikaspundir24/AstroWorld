@@ -38,3 +38,16 @@
     background-color: rgba(0, 247, 255, 0.671);
     color:white;
 }
+
+
+@media screen and (max-width : 767px) {
+    .right-nav h2{
+        display: none;
+    }
+    .right-nav button{
+        display: none;
+    }
+    .nav{
+       justify-content: center;
+    }
+}

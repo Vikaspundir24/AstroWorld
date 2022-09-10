@@ -33,3 +33,15 @@
     color:white;
     background-color: rgba(247, 241, 241, 0.2);
 }
+
+@media screen and (max-width : 767px) {
+    .top-main h1{
+        font-size: 36px;
+    }
+    .top-main button {
+        font-size: 12px;
+    }
+    .top-main h4{
+        font-size: 18px;
+       }
+}
