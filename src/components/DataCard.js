@@ -43,7 +43,7 @@ useEffect(() => {
         }).catch(function (error) {
         console.error(error);
         });
-    },[])
+    },[Sign , Day])
 
     return (
       <>
