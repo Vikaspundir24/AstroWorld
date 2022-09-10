@@ -1,4 +1,4 @@
-import axios from 'axios'
+
 import React , {useEffect , useState} from 'react'
 import { useSelector } from 'react-redux'
 import './DataCard.css'
@@ -10,11 +10,12 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 
 
-import Datainput from './store/inputStore'
+
 
 function DataCard() {
 
-const inputData = useSelector(state => state.inputData)
+const Sign = useSelector(state => state.inputData.Sign)
+const Day = useSelector(state => state.inputData.Day)
 const [data ,  setData] = useState("")
 
 
@@ -26,7 +27,7 @@ useEffect(() => {
        const options = {
                            method: 'POST',
                            url: 'https://sameer-kumar-aztro-v1.p.rapidapi.com/',
-                           params: {sign: inputData.Sign , day: inputData.Day},
+                           params: {sign:Sign , day: Day},
                            headers: {
                                       'X-RapidAPI-Key': '00b9e8b4e8msha01832e151a40fbp19aeddjsn714563214832',
                                       'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
@@ -54,7 +55,7 @@ useEffect(() => {
       </Backdrop>
       : <div className="container wrapper">
         <h1>{data.current_date}</h1>
-        <h1>{inputData.Sign}</h1>
+        <h1>{Sign}</h1>
         <div className="sides">
         <div className="left-side">
           <h2>Color : <span>{data.color}</span></h2>
