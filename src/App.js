@@ -14,7 +14,7 @@ function App() {
 
   const modalShown =  useSelector(state => state.modal.ismodalShown)
   const modaltwoShown =  useSelector(state => state.modalTwo.ismodalTwoShown)
-  const dataCardShown = useSelector(state => state.dataCard. isDataCardShow)
+  const dataCardShown = useSelector(state => state.dataCard.isDataCardShow)
 
   return (
     <div className="contents">
