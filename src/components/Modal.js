@@ -21,6 +21,12 @@ function Modal() {
       dispatch (inputAction.setSign(index))
       dispatch (dataCardAction.dontshowDataCard())
     }
+
+    const hideBackdrop = () => {
+      dispatch (modaltwoAction.dontshowModal())
+      dispatch (modalAction.dontshowModal())
+    
+    }
     
 
 
@@ -30,7 +36,7 @@ function Modal() {
 
   return (
     <>
-    <div className='backdrop'></div>
+    <div className='backdrop' onClick={hideBackdrop}></div>
     <div className="option-container">
         <ul className='lists'>
         <h1>Choose Your Zodiac</h1>

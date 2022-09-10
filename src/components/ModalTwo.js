@@ -21,10 +21,14 @@ function ModalTwo() {
     dispatch (dataCardAction.showDataCard())
   }
 
+  const hideBackdrop = () => {
+    dispatch (modaltwoAction.dontshowModal())
+  }
+
 
   return (
     <>
-    <div className='backdrop2'></div>
+    <div className='backdrop2' onClick={hideBackdrop}></div>
     <div className="option-container2">
         <ul className='lists2'>
         <h1>Select Day</h1>
