@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialmodalTwoState = {
-    ismodalTwoShown : false
+    ismodalTwoShown : false,
+    isDataCardShown : false
 }
 
 const modalTwoSlice = createSlice({
@@ -10,10 +11,12 @@ const modalTwoSlice = createSlice({
     reducers : {
         showModal(state) {
             state.ismodalTwoShown = true
-         
+            
         } , 
         dontshowModal(state){
             state.ismodalTwoShown= false
+            state.isDataCardShown = true
+           
         }
     }
 })

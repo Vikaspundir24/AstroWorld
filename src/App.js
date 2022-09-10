@@ -14,13 +14,15 @@ function App() {
 
   const modalShown =  useSelector(state => state.modal.ismodalShown)
   const modaltwoShown =  useSelector(state => state.modalTwo.ismodalTwoShown)
+  const dataCardShown = useSelector (state => state.modalTwo.isDataCardShown)
+
   return (
     <div className="contents">
     <Header/>
     <Body/>
     {modalShown && <Modal/>}  
     {modaltwoShown && <ModalTwo/>}   
-    <DataCard/>
+    {dataCardShown && <DataCard/>}
     </div>
   );
 }

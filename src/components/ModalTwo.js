@@ -24,6 +24,7 @@ function ModalTwo() {
     <div className='backdrop2'></div>
     <div className="option-container2">
         <ul className='lists2'>
+        <h1>Select Day</h1>
       
             {days.map((day , index) => {
                 return<button onClick={event => afterModalTwo(event , index)} key={index}>{day}</button>

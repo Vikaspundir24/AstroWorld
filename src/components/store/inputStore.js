@@ -5,18 +5,21 @@ const initialInputState = {
     Day : '' 
 }
 
+const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+const days = ['Yesterday' , 'Today' , 'Tomorrow']
+
 const inputSlice = createSlice({
     name : 'input' , 
     initialState : initialInputState ,
     reducers : {
         setSign(state, key) {
-              state.Sign = key.payload
-              console.log(state.Sign)
+              state.Sign = signs[key.payload]
+             /*  console.log(state.Sign) */
         } , 
 
         setDay (state , key) {
-            state.Day = key.payload
-            console.log(state.Day)
+            state.Day =  days[key.payload]
+        /*     console.log(state.Day) */
 
         }
     }
