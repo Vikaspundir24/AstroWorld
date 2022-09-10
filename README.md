@@ -4,7 +4,7 @@ A Astrology app based on Daily Horoscope APi from RapidAPI - The Next Generation
 
 
 ## Live Link
-[CLick Here➡️](https://weather-app-project-omega.vercel.app/](https://thunderous-melba-20f09e.netlify.app/)
+[CLick Here➡️](https://thunderous-melba-20f09e.netlify.app/)
 
 ## Features
 
