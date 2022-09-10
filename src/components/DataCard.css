@@ -1,0 +1,45 @@
+
+.container{
+    background-color:  rgba(0, 0, 0, 0.322);
+    color: white;
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+   width: 60vw;
+    height: auto;
+    text-align: left;
+    border: 2px solid white;
+    
+}
+
+.sides{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 15px;
+
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.desc{
+    width: 30vw;
+}
+
+.left-side h2 span{
+    color: rgb(0, 247, 255);
+}
+.right-side h2 span{
+    color: rgb(0, 247, 255);
+}

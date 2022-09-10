@@ -1,8 +1,10 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import './ModalTwo.css'
+import { dataCardAction } from './store/dataCardStore'
 import {inputAction} from './store/inputStore'
 import {modaltwoAction} from './store/modalStore2'
+
 
 
 function ModalTwo() {
@@ -16,6 +18,7 @@ function ModalTwo() {
     event.preventDefault()
     dispatch (modaltwoAction.dontshowModal())
     dispatch (inputAction.setDay(index))
+    dispatch (dataCardAction.showDataCard())
   }
 
 

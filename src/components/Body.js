@@ -2,6 +2,8 @@ import {useDispatch} from 'react-redux';
 import React  from 'react'
 import './Body.css'
 import { modalAction } from './store/modalStore';
+import { dataCardAction } from './store/dataCardStore';
+
 
 
 
@@ -15,8 +17,7 @@ const dispatch = useDispatch()
 const showModal = (event) =>{
     event.preventDefault();
     dispatch (modalAction.showModal())
-   
-    
+    dispatch (dataCardAction.dontshowDataCard())
 }
 
 

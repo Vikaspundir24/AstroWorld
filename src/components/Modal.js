@@ -4,6 +4,8 @@ import './Modal.css'
 import { modalAction } from './store/modalStore'
 import { modaltwoAction } from './store/modalStore2'
 import {inputAction} from './store/inputStore'
+import { dataCardAction } from './store/dataCardStore'
+
 
 function Modal() {
     const signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
@@ -17,7 +19,7 @@ function Modal() {
       dispatch (modalAction.dontshowModal())
       dispatch (modaltwoAction.showModal())
       dispatch (inputAction.setSign(index))
-   /*    console.log(index) */
+      dispatch (dataCardAction.dontshowDataCard())
     }
     
 

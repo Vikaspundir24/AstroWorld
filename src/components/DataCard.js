@@ -1,6 +1,7 @@
 import axios from 'axios'
-import React , {useEffect} from 'react'
+import React , {useEffect , useState} from 'react'
 import { useSelector } from 'react-redux'
+import './DataCard.css'
 
 
 
@@ -10,7 +11,8 @@ import Datainput from './store/inputStore'
 function DataCard() {
 
 const inputData = useSelector(state => state.inputData)
-let recievedData = '';
+const [data ,  setData] = useState({})
+
 
 
 useEffect(() => {
@@ -27,16 +29,36 @@ useEffect(() => {
                         };
 
         axios.request(options).then(function (response) {
-          recievedData = response.data;
-          console.log(recievedData);
+          setData(response.data);
+        
+         
      
         }).catch(function (error) {
         console.error(error);
         });
-    })
+    },[])
 
     return (
       <>
+      <div className="container wrapper">
+        <h1>{data.current_date}</h1>
+        <div className="sides">
+        <div className="left-side">
+          <h2>Color : <span>{data.color}</span></h2>
+          <h2>Compatibilty : <span>{data.compatibility}</span></h2>
+          <h2>Lucky Number : <span>{data.lucky_number}</span></h2>
+          <h2>lucky Time : <span>{data.lucky_time}</span> </h2>
+          <h2>Mood : <span>{data.mood}</span></h2>
+        </div>
+        <div className="right-side">
+          <h2 className='desc'>Description : <span>{data.description}</span>
+          </h2>
+       
+        </div>
+        </div>
+     
+     
+      </div>
       </>
       )
 
