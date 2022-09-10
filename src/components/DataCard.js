@@ -5,13 +5,18 @@ import './DataCard.css'
 
 
 
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
+
+
 
 import Datainput from './store/inputStore'
 
 function DataCard() {
 
 const inputData = useSelector(state => state.inputData)
-const [data ,  setData] = useState({})
+const [data ,  setData] = useState("")
+
 
 
 
@@ -30,6 +35,7 @@ useEffect(() => {
 
         axios.request(options).then(function (response) {
           setData(response.data);
+          console.error(response.data);
         
          
      
@@ -40,8 +46,15 @@ useEffect(() => {
 
     return (
       <>
-      <div className="container wrapper">
+      { !data ? <Backdrop
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open
+      >
+        <CircularProgress color="inherit" />
+      </Backdrop>
+      : <div className="container wrapper">
         <h1>{data.current_date}</h1>
+        <h1>{inputData.Sign}</h1>
         <div className="sides">
         <div className="left-side">
           <h2>Color : <span>{data.color}</span></h2>
@@ -58,7 +71,10 @@ useEffect(() => {
         </div>
      
      
-      </div>
+      </div> }
+
+      
+      
       </>
       )
 
