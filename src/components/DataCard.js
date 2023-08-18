@@ -23,20 +23,7 @@ function DataCard() {
         "X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com",
       },
     };
-
-=======
-
-     const options = {
-                           method: 'POST',
-                           url: 'https://sameer-kumar-aztro-v1.p.rapidapi.com/',
-                           params: {sign:Sign , day: Day},
-                           headers: {
-                                      'X-RapidAPI-Key': '9429ff74ebmsh08296bc91ea008ep1aa301jsn08981431fc71',
-                                      'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
-                                    }
-                        }; 
-
->>>>>>> 93cb2ce242e3e5dfab2e0fbe736bfc906a98f33a
+  
     axios
       .request(options)
       .then(function (response) {
