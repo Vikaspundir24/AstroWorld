@@ -12,7 +12,7 @@ function DataCard() {
 
   useEffect(() => {
     const axios = require("axios");
-<<<<<<< HEAD
+
 
     const options = {
       method: "POST",
