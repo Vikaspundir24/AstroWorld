@@ -12,10 +12,6 @@ function DataCard() {
 
   useEffect(() => {
     const axios = require("axios");
-<<<<<<< HEAD
-=======
-
->>>>>>> 25410e53a4cf6db57aa18d1471a52db1a7315d5f
 
     const options = {
       method: "POST",
@@ -26,11 +22,7 @@ function DataCard() {
         "X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com",
       },
     };
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 25410e53a4cf6db57aa18d1471a52db1a7315d5f
     axios
       .request(options)
       .then(function (response) {
