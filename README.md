@@ -1,6 +1,6 @@
 # Weather App
 
-A Astrology app based on Daily Horoscope APi from RapidAPI - The Next Generation API Platform, that gives the 3 day Horoscope Details of 12 Zodiac Signs.
+An Astrology app based on Daily Horoscope APi from RapidAPI - The Next Generation API Platform, that gives the 3 day Horoscope Details of 12 Zodiac Signs.
 
 
 ## Live Link
@@ -25,5 +25,10 @@ A Astrology app based on Daily Horoscope APi from RapidAPI - The Next Generation
 
 ## Sample Images
 
-![alt text]()
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/1.png)
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/2.png)
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/3.png)
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/4.png)
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/5.png)
+![alt text](https://github.com/Vikaspundir24/AstroWorld/blob/85f578b4b60f76a17c09eda4270ac206f70c5bd5/Design%20UI%20Screenshots/6.png)
 
