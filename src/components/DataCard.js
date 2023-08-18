@@ -12,12 +12,8 @@ function DataCard() {
 
   useEffect(() => {
     const axios = require("axios");
-    const options = {
-      url: `https://us-central1-tf-natal.cloudfunctions.net/horoscopeapi_test?token=mmEUtLATc8w_UNnHuR2&sign=${Sign}&date=${Day}`,
-      method: "GET",
-    };
 
-    /*    const options = {
+     const options = {
                            method: 'POST',
                            url: 'https://sameer-kumar-aztro-v1.p.rapidapi.com/',
                            params: {sign:Sign , day: Day},
@@ -25,7 +21,7 @@ function DataCard() {
                                       'X-RapidAPI-Key': '9429ff74ebmsh08296bc91ea008ep1aa301jsn08981431fc71',
                                       'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
                                     }
-                        }; */
+                        }; 
 
     axios
       .request(options)
