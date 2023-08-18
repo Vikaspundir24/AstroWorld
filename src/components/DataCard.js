@@ -12,20 +12,16 @@ function DataCard() {
 
   useEffect(() => {
     const axios = require("axios");
-    const options = {
-      url: `https://us-central1-tf-natal.cloudfunctions.net/horoscopeapi_test?token=mmEUtLATc8w_UNnHuR2&sign=${Sign}&date=${Day}`,
-      method: "GET",
-    };
 
-    /*    const options = {
-                           method: 'POST',
-                           url: 'https://sameer-kumar-aztro-v1.p.rapidapi.com/',
-                           params: {sign:Sign , day: Day},
-                           headers: {
-                                      'X-RapidAPI-Key': '9429ff74ebmsh08296bc91ea008ep1aa301jsn08981431fc71',
-                                      'X-RapidAPI-Host': 'sameer-kumar-aztro-v1.p.rapidapi.com'
-                                    }
-                        }; */
+    const options = {
+      method: "POST",
+      url: "https://sameer-kumar-aztro-v1.p.rapidapi.com/",
+      params: { sign: Sign, day: Day },
+      headers: {
+        "X-RapidAPI-Key": "9429ff74ebmsh08296bc91ea008ep1aa301jsn08981431fc71",
+        "X-RapidAPI-Host": "sameer-kumar-aztro-v1.p.rapidapi.com",
+      },
+    };
 
     axios
       .request(options)
@@ -81,8 +77,4 @@ function DataCard() {
   );
 }
 
-<<<<<<< HEAD
 export default DataCard;
-=======
-export default DataCard
->>>>>>> 13c92a33984104371379037567b0d05f9fba61d5
