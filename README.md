@@ -1,6 +1,7 @@
 # AstroWorld
 
 An Astrology app based on Daily Horoscope APi from RapidAPI - The Next Generation API Platform, that gives the 3 day Horoscope Details of 12 Zodiac Signs.
+# API IS DEAD NOW (NEW UPDATE)
 
 
 ## Live Link
